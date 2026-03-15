@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Learn C-Walk from scratch — the ultimate beginner street dance course. Master footwork, Cripwalk steps and freestyle flow with a structured online tutorial. Instant download, only $14.99.">
+<meta name="description" content="Learn C-Walk from scratch — the ultimate beginner street dance course. Master footwork, Cripwalk steps and freestyle flow with a structured online tutorial. Instant download, from 23,99 €.">
 <meta name="keywords" content="learn C-Walk, C-Walk beginner, street dance tutorial, online dance course, footwork tutorial, beginner dance class, Cripwalk steps, how to C-Walk, dance for beginners">
 <title>Learn C-Walk – The Beginner Street Dance Course | Instant Download</title>
 <style>
@@ -422,7 +422,7 @@
 <!-- ─── NAV ─── -->
 <nav>
   <a href="#" class="nav-logo">C‑Walk Academy</a>
-  <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="nav-cta" target="_blank" rel="noopener">Get the Course – $14.99</a>
+  <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="nav-cta" target="_blank" rel="noopener">Get the Course – 29,99 €</a>
 </nav>
 
 <!-- ─── HERO ─── -->
@@ -433,7 +433,7 @@
   <h1>Learn <em>C‑Walk</em>.<br>Own Your Flow.</h1>
   <p class="hero-sub">The structured beginner course that takes you from zero to freestyle — step by step, move by move. No prior dance experience needed. Just you, the beat, and the right guidance.</p>
   <div class="hero-cta-group">
-    <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="btn-primary" id="buy-btn-hero" target="_blank" rel="noopener">Get Started – $14.99</a>
+    <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="btn-primary" id="buy-btn-hero" target="_blank" rel="noopener">Get Started – 29,99 €</a>
     <a href="#contents" class="btn-secondary">See What's Inside</a>
   </div>
   <div class="hero-preview">
@@ -467,7 +467,7 @@
       <div class="stat-label">Lifetime Access</div>
     </div>
     <div class="stat-item reveal reveal-delay-3">
-      <div class="stat-num">$14.99</div>
+      <div class="stat-num">29,99 €</div>
       <div class="stat-label">One-Time Price</div>
     </div>
   </div>
@@ -739,12 +739,26 @@
 <div id="cta" style="padding:80px 5%;">
   <div class="cta-inner reveal">
     <div class="price-badge">
-      <span class="price-big">$14.99</span>
-      <span class="price-desc">· One-time · Instant download</span>
+      <span class="price-big" style="text-decoration:line-through;opacity:0.5;font-size:1.4rem;">29,99 €</span><span class="price-big" style="margin-left:10px;">23,99 €</span>
+      <span class="price-desc">· with code CWALK20 · Instant download</span>
     </div>
     <h2>Ready to take your first step?</h2>
     <p>Pay once. Download instantly. Start dancing today — on your own terms, in your own space, at your own pace.</p>
-    <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="btn-white" id="buy-btn-cta" target="_blank" rel="noopener">Get the Course – $14.99</a>
+    <div style="margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;">
+        <input type="text" id="discount-input" placeholder="Got a discount code?" value=""
+          style="padding:13px 18px;border-radius:980px;border:2px solid rgba(255,255,255,0.3);
+          background:rgba(255,255,255,0.12);color:white;font-size:0.95rem;width:220px;
+          outline:none;text-align:center;letter-spacing:0.05em;text-transform:uppercase;"
+          oninput="this.value=this.value.toUpperCase()">
+        <button onclick="applyCode()" 
+          style="padding:13px 22px;border-radius:980px;border:2px solid rgba(255,255,255,0.5);
+          background:rgba(255,255,255,0.15);color:white;font-size:0.95rem;font-weight:600;
+          cursor:pointer;">Apply</button>
+      </div>
+      <div id="discount-msg" style="margin-top:10px;font-size:0.88rem;color:rgba(255,255,255,0.7);min-height:20px;"></div>
+    </div>
+    <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="btn-white" id="buy-btn-cta" target="_blank" rel="noopener">Get the Course – <span id="cta-price">35,00 €</span></a>
     <div class="cta-guarantee">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
       <span>Secure payment · Instant access · No subscription</span>
@@ -828,6 +842,27 @@
   }, { passive: true });
 
   // Buy buttons now link directly to Stripe — no placeholder needed.
+
+  // Discount code logic
+  const CODES = { 'CWALK20': { discount: 0.20, label: '20% off applied!', price: '23,99 €' } };
+  function applyCode() {
+    const code = document.getElementById('discount-input').value.trim().toUpperCase();
+    const msg = document.getElementById('discount-msg');
+    const priceEl = document.getElementById('cta-price');
+    if (CODES[code]) {
+      msg.innerHTML = '✓ ' + CODES[code].label;
+      msg.style.color = '#a3f0c2';
+      if (priceEl) priceEl.textContent = CODES[code].price;
+    } else if (code === '') {
+      msg.textContent = '';
+    } else {
+      msg.textContent = '✗ Invalid code. Try CWALK20';
+      msg.style.color = 'rgba(255,180,180,0.9)';
+    }
+  }
+  document.getElementById('discount-input').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') applyCode();
+  });
 </script>
 </body>
 </html>
