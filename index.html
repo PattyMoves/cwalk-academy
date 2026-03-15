@@ -422,7 +422,7 @@
 <!-- ─── NAV ─── -->
 <nav>
   <a href="#" class="nav-logo">C‑Walk Academy</a>
-  <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="nav-cta" target="_blank" rel="noopener">Get the Course – 29,99 €</a>
+  <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="nav-cta" target="_blank" rel="noopener">Get the Course – <span id="cta-price">29,99 €</span></a>
 </nav>
 
 <!-- ─── HERO ─── -->
@@ -744,19 +744,18 @@
     </div>
     <h2>Ready to take your first step?</h2>
     <p>Pay once. Download instantly. Start dancing today — on your own terms, in your own space, at your own pace.</p>
-    <div style="margin-bottom:24px;">
-      <div style="display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;">
-        <input type="text" id="discount-input" placeholder="Got a discount code?" value=""
-          style="padding:13px 18px;border-radius:980px;border:2px solid rgba(255,255,255,0.3);
-          background:rgba(255,255,255,0.12);color:white;font-size:0.95rem;width:220px;
-          outline:none;text-align:center;letter-spacing:0.05em;text-transform:uppercase;"
+    <div style="margin-bottom:32px;">
+      <p style="color:rgba(255,255,255,0.6);font-size:0.82rem;margin-bottom:12px;letter-spacing:0.08em;text-transform:uppercase;">Have a discount code?</p>
+      <div style="display:flex;align-items:center;justify-content:center;max-width:380px;margin:0 auto;background:rgba(255,255,255,0.12);border-radius:980px;border:1.5px solid rgba(255,255,255,0.25);overflow:hidden;">
+        <input type="text" id="discount-input" placeholder="Enter code here"
+          style="padding:14px 20px;border:none;background:transparent;color:white;font-size:0.95rem;width:100%;outline:none;letter-spacing:0.06em;text-transform:uppercase;"
           oninput="this.value=this.value.toUpperCase()">
-        <button onclick="applyCode()" 
-          style="padding:13px 22px;border-radius:980px;border:2px solid rgba(255,255,255,0.5);
-          background:rgba(255,255,255,0.15);color:white;font-size:0.95rem;font-weight:600;
-          cursor:pointer;">Apply</button>
+        <button onclick="applyCode()"
+          style="padding:14px 24px;border:none;border-left:1.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.15);color:white;font-size:0.88rem;font-weight:700;cursor:pointer;white-space:nowrap;letter-spacing:0.04em;"
+          onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+          onmouseout="this.style.background='rgba(255,255,255,0.15)'">APPLY</button>
       </div>
-      <div id="discount-msg" style="margin-top:10px;font-size:0.88rem;color:rgba(255,255,255,0.7);min-height:20px;"></div>
+      <div id="discount-msg" style="margin-top:12px;font-size:0.88rem;min-height:22px;"></div>
     </div>
     <a href="https://buy.stripe.com/6oUdR9gp75GHg4s27N1kA00" class="btn-white" id="buy-btn-cta" target="_blank" rel="noopener">Get the Course – <span id="cta-price">35,00 €</span></a>
     <div class="cta-guarantee">
