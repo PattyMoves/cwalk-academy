@@ -191,28 +191,8 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg-s)}
 .fco{font-size:12px;color:var(--t3)}
 .fl{display:flex;gap:24px}.fl a{font-size:12px;color:var(--t3);text-decoration:none;transition:color .2s}.fl a:hover{color:var(--t1)}
 
-/* MODAL */
-.mbg{position:fixed;inset:0;background:rgba(0,0,0,.4);backdrop-filter:blur(8px);z-index:10000;display:none;align-items:center;justify-content:center;padding:24px}
-.mbg.opn{display:flex}
-.mbox{background:var(--bg);border-radius:var(--r-xl);padding:44px;max-width:440px;width:100%;position:relative;animation:scaleIn .3s ease;box-shadow:var(--sh-xl)}
-.mx{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:var(--bg-s);border:none;font-size:18px;color:var(--t3);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.mx:hover{background:var(--bdr-l);color:var(--t1)}
-.mbox h3{font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
-.msb{font-size:15px;color:var(--t2);margin-bottom:28px}.msb .pr{color:var(--blue);font-weight:600}
-.fd{margin-bottom:16px}.fd label{display:block;font-size:12px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
-.fd input{width:100%;background:var(--bg-s);border:1.5px solid var(--bdr-l);border-radius:12px;padding:13px 16px;font-size:15px;color:var(--t1);font-family:var(--font);outline:none;transition:border-color .2s}
-.fd input:focus{border-color:var(--blue)}
-.fr{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.mp{width:100%;margin-top:24px;background:var(--blue);color:#fff;padding:16px;border-radius:14px;font-size:16px;font-weight:600;border:none;cursor:pointer;font-family:var(--font);transition:all .3s}
-.mp:hover{background:var(--blue-h);box-shadow:0 4px 20px rgba(0,113,227,.25)}
-.msc{text-align:center;font-size:12px;color:var(--t3);margin-top:12px}
-.sv{text-align:center;padding:16px 0}
-.si{width:72px;height:72px;background:var(--blue-g);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:32px;color:#fff}
-.sv h3{font-size:28px;font-weight:700;margin-bottom:8px;letter-spacing:-.02em}
-.sv p{color:var(--t2);font-size:15px;line-height:1.6}
-
 @media(max-width:900px){.fg,.tg{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.nk{display:none}.mt{display:block}.hgp{grid-template-columns:repeat(3,1fr)}.ti{gap:24px}.nl-sub{display:none}}
-@media(max-width:600px){section{padding:72px 0}.hero{padding:56px 24px 40px}.hc{flex-direction:column;align-items:center}.bb,.bo{width:100%;justify-content:center}.pb{padding:40px 28px}.mbox{padding:32px 24px}.fti{flex-direction:column;text-align:center}.hgp{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){section{padding:72px 0}.hero{padding:56px 24px 40px}.hc{flex-direction:column;align-items:center}.bb,.bo{width:100%;justify-content:center}.pb{padding:40px 28px}.fti{flex-direction:column;text-align:center}.hgp{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -232,7 +212,7 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg-s)}
 <a href="#curriculum">Tutorials</a>
 <a href="#testimonials">Reviews</a>
 <a href="#faq">FAQ</a>
-<a href="#pricing" class="nb">Get Access</a>
+<a href="https://buy.stripe.com/test_28EdR8cGD8Wj5gj8AV1sQ00" target="_blank" class="nb">Get Access</a>
 </div>
 <button class="mt" onclick="document.querySelector('.nk').classList.toggle('show')">☰</button>
 </div></nav>
@@ -340,8 +320,8 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg-s)}
 </ul>
 <div class="cig"><input type="text" class="ci" id="cI" placeholder="Enter discount code…" value="C-Walk20"><button class="ca" onclick="aC()">Apply</button></div>
 <div class="cm ok" id="cMsg">✓ Code C-Walk20 active — 20% off</div>
-<button class="byb" onclick="oM()">Get Access — <span id="bP">$23.99</span></button>
-<div class="pf">🔒 Secure checkout · 14-day money-back guarantee</div>
+<button class="byb" onclick="window.open('https://buy.stripe.com/test_28EdR8cGD8Wj5gj8AV1sQ00','_blank')">Get Access — <span id="bP">$23.99</span></button>
+<div class="pf">🔒 Secure checkout via Stripe · 14-day money-back guarantee</div>
 </div>
 </div></section>
 
@@ -351,7 +331,7 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg-s)}
 <div class="fw">
 <div class="fi rv"><div class="fq" onclick="tF(this)"><span>Do I need any dance experience?</span><div class="ft">+</div></div><div class="fa"><div class="fai">Not at all! C-Walk Academy is designed for complete beginners. We start from absolute zero and build up step by step. All you need is a pair of comfortable shoes and the willingness to learn.</div></div></div>
 <div class="fi rv"><div class="fq" onclick="tF(this)"><span>How long do I have access?</span><div class="ft">+</div></div><div class="fa"><div class="fai">Forever! You pay once and get lifetime access — including any future tutorials or bonus content that gets added to the course.</div></div></div>
-<div class="fi rv"><div class="fq" onclick="tF(this)"><span>How does the discount code work?</span><div class="ft">+</div></div><div class="fa"><div class="fai">Enter the code C-Walk20 in the discount field and click "Apply." You'll instantly get 20% off — paying just $23.99 instead of $29.99.</div></div></div>
+<div class="fi rv"><div class="fq" onclick="tF(this)"><span>How does the discount code work?</span><div class="ft">+</div></div><div class="fa"><div class="fai">Enter the code C-Walk20 at checkout and you'll instantly get 20% off — paying just $23.99 instead of $29.99.</div></div></div>
 <div class="fi rv"><div class="fq" onclick="tF(this)"><span>Is there a money-back guarantee?</span><div class="ft">+</div></div><div class="fa"><div class="fai">Yes! You have 14 days to try the full course. If you're not happy, you get a full refund — no questions asked.</div></div></div>
 <div class="fi rv"><div class="fq" onclick="tF(this)"><span>What devices can I use?</span><div class="ft">+</div></div><div class="fa"><div class="fai">All of them! The course works on phone, tablet, and desktop. All you need is an internet connection and you can practice anywhere.</div></div></div>
 <div class="fi rv"><div class="fq" onclick="tF(this)"><span>How long is the course?</span><div class="ft">+</div></div><div class="fa"><div class="fai">C-Walk Academy includes 10 video tutorials in 4K totaling about 60 minutes of focused content. Each tutorial is 5-7 minutes — short enough to stay focused, long enough to learn the move properly.</div></div></div>
@@ -362,7 +342,7 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg-s)}
 <section class="fcta"><div class="container">
 <h2 class="rv">Ready for your<br>first <span class="bl">move</span>?</h2>
 <p class="rv">Join 100+ students and start learning today.</p>
-<a href="#pricing" class="bb rv" style="padding:18px 40px;font-size:18px">Get Started — $23.99</a>
+<a href="https://buy.stripe.com/test_28EdR8cGD8Wj5gj8AV1sQ00" target="_blank" class="bb rv" style="padding:18px 40px;font-size:18px">Get Started — $23.99</a>
 </div></section>
 
 <!-- FOOTER -->
@@ -371,38 +351,13 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg-s)}
 <div class="fl"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="mailto:patrkt@web.de">Contact</a></div>
 </div></footer>
 
-<!-- CHECKOUT MODAL -->
-<div class="mbg" id="cMo">
-<div class="mbox">
-<button class="mx" onclick="cM2()">×</button>
-<div id="fV">
-<h3>Checkout</h3>
-<p class="msb">C-Walk Academy Full Access — <span class="pr" id="mP">$23.99</span></p>
-<div class="fd"><label>Full Name</label><input type="text" placeholder="John Smith" id="fN"></div>
-<div class="fd"><label>Email Address</label><input type="email" placeholder="john@email.com" id="fE"></div>
-<div class="fd"><label>Card Number</label><input type="text" placeholder="4242 4242 4242 4242" id="fC" maxlength="19"></div>
-<div class="fr"><div class="fd"><label>Expiry</label><input type="text" placeholder="MM/YY" maxlength="5"></div><div class="fd"><label>CVC</label><input type="text" placeholder="123" maxlength="3"></div></div>
-<button class="mp" onclick="pY()">Pay Securely — <span id="pP">$23.99</span></button>
-<div class="msc">🔒 SSL encrypted · Secure payment processing</div>
-</div>
-<div id="sV" class="sv" style="display:none"><div class="si">✓</div><h3>Welcome!</h3><p>Payment successful! 🎉<br>Check your email for instant access to C-Walk Academy.<br><br><strong>Let's move!</strong></p></div>
-</div>
-</div>
 
 <script>
-let hd=true;const B=29.99;
+let hd=true;const B=29.99,STRIPE='https://buy.stripe.com/test_28EdR8cGD8Wj5gj8AV1sQ00';
 function aC(){const v=document.getElementById('cI').value.trim().toUpperCase().replace(/[-_ ]/g,''),m=document.getElementById('cMsg');if(v==='CWALK20'){hd=true;m.className='cm ok';m.textContent='✓ Code C-Walk20 active — 20% off'}else{hd=false;m.className='cm er';m.textContent='✗ Invalid code. Try C-Walk20 ;)'}uA()}
-function uA(){const f=hd?(B*.8).toFixed(2):B.toFixed(2);document.getElementById('dP').textContent=f;document.getElementById('bP').textContent='$'+f;document.getElementById('mP').textContent='$'+f;document.getElementById('pP').textContent='$'+f;const n=document.getElementById('sN'),o=document.getElementById('oP');if(hd){n.textContent='You save $'+(B-parseFloat(f)).toFixed(2)+' with code C-Walk20';n.style.display='';o.style.display=''}else{n.style.display='none';o.style.display='none'}}
+function uA(){const f=hd?(B*.8).toFixed(2):B.toFixed(2);document.getElementById('dP').textContent=f;document.getElementById('bP').textContent='$'+f;const n=document.getElementById('sN'),o=document.getElementById('oP');if(hd){n.textContent='You save $'+(B-parseFloat(f)).toFixed(2)+' with code C-Walk20';n.style.display='';o.style.display=''}else{n.style.display='none';o.style.display='none'}}
 function tM(e){const c=e.parentElement,o=c.classList.contains('op');document.querySelectorAll('.mc').forEach(m=>m.classList.remove('op'));if(!o)c.classList.add('op')}
 function tF(e){const c=e.parentElement,o=c.classList.contains('op');document.querySelectorAll('.fi').forEach(f=>f.classList.remove('op'));if(!o)c.classList.add('op')}
-function oM(){document.getElementById('cMo').classList.add('opn');document.body.style.overflow='hidden';document.getElementById('fV').style.display='';document.getElementById('sV').style.display='none'}
-function cM2(){document.getElementById('cMo').classList.remove('opn');document.body.style.overflow=''}
-document.getElementById('cMo').addEventListener('click',function(e){if(e.target===this)cM2()});
-function pY(){if(!document.getElementById('fN').value||!document.getElementById('fE').value){alert('Please fill in all fields.');return}const b=document.querySelector('.mp');b.textContent='Processing…';b.disabled=true;setTimeout(()=>{document.getElementById('fV').style.display='none';document.getElementById('sV').style.display=''},1600)}
-document.getElementById('fC')?.addEventListener('input',function(){let v=this.value.replace(/\D/g,'').substring(0,16);this.value=v.replace(/(.{4})/g,'$1 ').trim()});
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
-const ld=document.createElement('script');ld.type='application/ld+json';ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Course","name":"C-Walk Academy by Patty Moves","description":"The ultimate C-Walk online course. 10 video tutorials in 4K, 60 minutes of focused content.","provider":{"@type":"Organization","name":"Patty Moves"},"offers":{"@type":"Offer","price":"29.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"100"}});document.head.appendChild(ld);
-</script>
-</body>
-</html>
+const ld=document.createElement('script');ld.type='application/ld+json';ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Course","name":"C-Walk Academy by Patty Moves","description":"The ultimate C-Walk online course. 10 video tutorials in 4K, 60 minutes of focused content.","provider":{"@type":"Organization","name":"Patty Moves"},"offers":{"@type":"Offer","price":"29.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},"
