@@ -348,11 +348,11 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg-s)}
 <!-- FOOTER -->
 <footer><div class="container fti">
 <div class="fco">© 2026 C-Walk Academy · PKT Media. All rights reserved.</div>
-<div class="fl"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="/cdn-cgi/l/email-protection#99e9f8edebf2edd9eefcfbb7fdfc">Contact</a></div>
+<div class="fl"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="mailto:patrkt@web.de">Contact</a></div>
 </div></footer>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 let hd=true;const B=29.99,STRIPE='https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02';
 function aC(){const v=document.getElementById('cI').value.trim().toUpperCase().replace(/[-_ ]/g,''),m=document.getElementById('cMsg');if(v==='CWALK20'){hd=true;m.className='cm ok';m.textContent='✓ Code C-Walk20 active — 20% off'}else{hd=false;m.className='cm er';m.textContent='✗ Invalid code. Try C-Walk20 ;)'}uA()}
 function uA(){const f=hd?(B*.8).toFixed(2):B.toFixed(2);document.getElementById('dP').textContent=f;document.getElementById('bP').textContent='$'+f;const n=document.getElementById('sN'),o=document.getElementById('oP');if(hd){n.textContent='You save $'+(B-parseFloat(f)).toFixed(2)+' with code C-Walk20';n.style.display='';o.style.display=''}else{n.style.display='none';o.style.display='none'}}
@@ -360,4 +360,7 @@ function tM(e){const c=e.parentElement,o=c.classList.contains('op');document.que
 function tF(e){const c=e.parentElement,o=c.classList.contains('op');document.querySelectorAll('.fi').forEach(f=>f.classList.remove('op'));if(!o)c.classList.add('op')}
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
-const ld=document.createElement('script');ld.type='application/ld+json';ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Course","name":"C-Walk Academy by Patty Moves","description":"The ultimate C-Walk online course. 10 video tutorials in 4K, 60 minutes of focused content.","provider":{"@type":"Or
+const ld=document.createElement('script');ld.type='application/ld+json';ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Course","name":"C-Walk Academy by Patty Moves","description":"The ultimate C-Walk online course. 10 video tutorials in 4K, 60 minutes of focused content.","provider":{"@type":"Organization","name":"Patty Moves"},"offers":{"@type":"Offer","price":"29.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"100"}});document.head.appendChild(ld);
+</script>
+</body>
+</html>
