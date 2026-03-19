@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>C-Walk Academy by Patty Moves – Learn C-Walk Step by Step</title>
-<meta name="description" content="C-Walk Academy by Patty Moves. 10 video tutorials in 4K, 60 minutes of content. Start now for just 29,99€!">
+<meta name="description" content="C-Walk Academy by Patty Moves. 10 video tutorials in 4K, 60 minutes of content. Start now for just 29,99 EUR!">
 <meta name="keywords" content="C-Walk Academy, learn C-Walk, Cwalk course, C-Walk tutorial, Patty Moves">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="C-Walk Academy – Learn C-Walk Like a Pro">
@@ -13,254 +13,154 @@
 <link rel="canonical" href="https://cwalk-academy.com">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
---bg:#fff;--bg2:#f5f5f7;
---blue:#0071e3;--blue-h:#0077ED;--blue-l:#e8f2ff;--blue-p:#f0f6ff;
---blue-g:linear-gradient(135deg,#0071e3,#2997ff);
---t1:#1d1d1f;--t2:#6e6e73;--t3:#86868b;
---bdr:#d2d2d7;--bdr-l:#e8e8ed;
---sh-m:0 4px 20px rgba(0,0,0,.06);--sh-l:0 8px 40px rgba(0,0,0,.08);--sh-xl:0 20px 60px rgba(0,0,0,.1);
---font:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif
-}
+:root{--bg:#fff;--bg2:#f5f5f7;--blue:#0071e3;--blue-h:#0077ED;--blue-l:#e8f2ff;--blue-p:#f0f6ff;--blue-g:linear-gradient(135deg,#0071e3,#2997ff);--t1:#1d1d1f;--t2:#6e6e73;--t3:#86868b;--bdr:#d2d2d7;--bdr-l:#e8e8ed;--sh-m:0 4px 20px rgba(0,0,0,.06);--sh-l:0 8px 40px rgba(0,0,0,.08);--sh-xl:0 20px 60px rgba(0,0,0,.1);--font:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif}
 html{scroll-behavior:smooth}
 body{font-family:var(--font);background:var(--bg);color:var(--t1);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 .container{max-width:1080px;margin:0 auto;padding:0 24px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 @keyframes scaleIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
 @keyframes pulseSoft{0%,100%{opacity:1}50%{opacity:.6}}
-.rv{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.22,1,.36,1)}
-.rv.vis{opacity:1;transform:translateY(0)}
-.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}
-.ann{background:var(--t1);color:#fff;text-align:center;padding:11px 24px;font-size:14px;font-weight:500}
-.ann strong{color:#2997ff}.ann a{color:#2997ff;text-decoration:none;font-weight:600}.ann a:hover{text-decoration:underline}
+.rv{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.22,1,.36,1)}.rv.vis{opacity:1;transform:translateY(0)}.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}
+.ann{background:var(--t1);color:#fff;text-align:center;padding:11px 24px;font-size:14px;font-weight:500}.ann strong{color:#2997ff}.ann a{color:#2997ff;text-decoration:none;font-weight:600}.ann a:hover{text-decoration:underline}
 nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.04)}
 .ni{display:flex;justify-content:space-between;align-items:center;height:52px;max-width:1080px;margin:0 auto;padding:0 24px}
-.nl{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nl-b{font-size:20px;font-weight:700;color:var(--t1);letter-spacing:-.5px}.nl-b span{color:var(--blue)}
-.nl-s{width:1px;height:18px;background:var(--bdr)}.nl-t{font-size:13px;font-weight:500;color:var(--t3)}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none}.nl-b{font-size:20px;font-weight:700;color:var(--t1);letter-spacing:-.5px}.nl-b span{color:var(--blue)}.nl-s{width:1px;height:18px;background:var(--bdr)}.nl-t{font-size:13px;font-weight:500;color:var(--t3)}
 .nk{display:flex;gap:32px;align-items:center}.nk a{color:var(--t2);text-decoration:none;font-size:14px;transition:color .2s}.nk a:hover{color:var(--t1)}
 .nb{background:var(--blue);color:#fff!important;padding:8px 18px;border-radius:980px;font-size:13px!important;font-weight:500!important;transition:all .2s!important}.nb:hover{background:var(--blue-h)}
 .mt{display:none;background:none;border:none;font-size:20px;cursor:pointer;color:var(--t1)}
-.hero{text-align:center;padding:80px 24px 60px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(0,113,227,.04) 0%,transparent 70%);pointer-events:none}
-.hero-ey{display:inline-flex;align-items:center;gap:8px;font-size:16px;font-weight:500;color:var(--blue);margin-bottom:16px;animation:fadeUp .6s ease both}
-.hero-ey .dot{width:7px;height:7px;background:var(--blue);border-radius:50%;animation:pulseSoft 2s infinite}
-.hero h1{font-size:clamp(44px,7vw,72px);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-bottom:16px;animation:fadeUp .6s .1s ease both}
-.hero h1 .bl{color:var(--blue)}
+.hero{text-align:center;padding:80px 24px 60px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(0,113,227,.04) 0%,transparent 70%);pointer-events:none}
+.hero-ey{display:inline-flex;align-items:center;gap:8px;font-size:16px;font-weight:500;color:var(--blue);margin-bottom:16px;animation:fadeUp .6s ease both}.hero-ey .dot{width:7px;height:7px;background:var(--blue);border-radius:50%;animation:pulseSoft 2s infinite}
+.hero h1{font-size:clamp(44px,7vw,72px);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-bottom:16px;animation:fadeUp .6s .1s ease both}.hero h1 .bl{color:var(--blue)}
 .hero-sub{font-size:clamp(18px,2.5vw,24px);font-weight:400;color:var(--t2);line-height:1.4;max-width:620px;margin:0 auto 40px;animation:fadeUp .6s .2s ease both}
-.hero-pricing{animation:fadeUp .6s .25s ease both;margin-bottom:40px}
-.hero-pm{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:12px}
-.hero-old{font-size:22px;color:var(--t3);text-decoration:line-through}
-.hero-new{font-size:52px;font-weight:700;color:var(--t1);letter-spacing:-.03em}.hero-new span{color:var(--blue)}
-.hero-sv{font-size:15px;color:var(--blue);font-weight:600;margin-bottom:16px}
-.hero-cd{display:inline-flex;align-items:center;gap:10px;background:var(--blue-l);border-radius:10px;padding:10px 20px;font-size:14px;color:var(--t2)}
-.hero-cd code{background:var(--blue);color:#fff;padding:5px 12px;border-radius:6px;font-size:14px;font-weight:700;letter-spacing:.5px;font-family:monospace}
+.hero-pricing{animation:fadeUp .6s .25s ease both;margin-bottom:40px}.hero-pm{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:12px}.hero-old{font-size:22px;color:var(--t3);text-decoration:line-through}.hero-new{font-size:52px;font-weight:700;color:var(--t1);letter-spacing:-.03em}.hero-new span{color:var(--blue)}.hero-sv{font-size:15px;color:var(--blue);font-weight:600;margin-bottom:16px}.hero-cd{display:inline-flex;align-items:center;gap:10px;background:var(--blue-l);border-radius:10px;padding:10px 20px;font-size:14px;color:var(--t2)}.hero-cd code{background:var(--blue);color:#fff;padding:5px 12px;border-radius:6px;font-size:14px;font-weight:700;letter-spacing:.5px;font-family:monospace}
 .hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeUp .6s .3s ease both}
-.btn-m{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;padding:16px 36px;border-radius:980px;font-size:17px;font-weight:500;text-decoration:none;transition:all .3s cubic-bezier(.22,1,.36,1)}
-.btn-m:hover{background:var(--blue-h);transform:scale(1.02);box-shadow:0 4px 20px rgba(0,113,227,.25)}
+.btn-m{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;padding:16px 36px;border-radius:980px;font-size:17px;font-weight:500;text-decoration:none;transition:all .3s cubic-bezier(.22,1,.36,1)}.btn-m:hover{background:var(--blue-h);transform:scale(1.02);box-shadow:0 4px 20px rgba(0,113,227,.25)}
 .btn-s{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--blue);padding:16px 36px;border-radius:980px;font-size:17px;font-weight:500;text-decoration:none;transition:all .2s}.btn-s:hover{background:var(--blue-l)}
-.vid-w{max-width:820px;margin:48px auto 0}
-.vid-box{position:relative;aspect-ratio:16/9;background:#000;border-radius:20px;overflow:hidden;cursor:pointer;box-shadow:var(--sh-xl)}
-.vid-box:hover .vid-pl{transform:scale(1.1)}
-.vid-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,113,227,.08),rgba(0,0,0,.8));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
-.vid-pl{width:72px;height:72px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 30px rgba(0,113,227,.4);transition:transform .3s}
-.vid-lb{color:#fff;font-size:14px;font-weight:500;opacity:.85}
-.vid-bg{position:absolute;bottom:16px;left:16px;font-size:11px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase}
-.trust{padding:40px 0;border-top:1px solid var(--bdr-l);border-bottom:1px solid var(--bdr-l)}
-.trust-r{display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
-.trust-i{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--t2);font-weight:500}
-.trust-ic{width:36px;height:36px;background:var(--blue-l);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
-section{padding:100px 0}
-.s-ey{font-size:14px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
-.s-t{font-size:clamp(36px,5vw,52px);font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-bottom:12px}
-.s-d{font-size:18px;color:var(--t2);line-height:1.5;max-width:540px}
-.s-hc{text-align:center;margin-bottom:64px}.s-hc .s-d{margin:0 auto}
-.feat{background:var(--bg2)}
-.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.fc{background:var(--bg);border-radius:24px;padding:40px 32px;transition:all .4s cubic-bezier(.22,1,.36,1);border:1px solid transparent}
-.fc:hover{transform:translateY(-4px);box-shadow:var(--sh-l);border-color:var(--bdr-l)}
-.fi{width:52px;height:52px;background:var(--blue-l);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:20px}
-.fc h3{font-size:20px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
-.fc p{font-size:15px;color:var(--t2);line-height:1.6}
-.mw{max-width:720px;margin:0 auto}
-.mc{border:1px solid var(--bdr-l);border-radius:16px;margin-bottom:10px;overflow:hidden;background:var(--bg);transition:all .3s}
-.mc:hover{border-color:var(--bdr)}.mc.op{border-color:var(--blue);box-shadow:0 2px 12px rgba(0,113,227,.08)}
-.mh{display:flex;align-items:center;gap:16px;padding:20px 24px;cursor:pointer;user-select:none}
-.mn{width:40px;height:40px;background:var(--blue-l);color:var(--blue);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;transition:all .3s}
-.mc.op .mn{background:var(--blue);color:#fff}
-.mtt{flex:1;font-size:16px;font-weight:600}.mm{font-size:13px;color:var(--t3)}
-.ma{color:var(--t3);font-size:18px;transition:transform .3s;flex-shrink:0}.mc.op .ma{transform:rotate(90deg);color:var(--blue)}
-.mb{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}.mc.op .mb{max-height:300px}
-.mi{padding:0 24px 20px 80px}.mi ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-.mi li{font-size:14px;color:var(--t2);display:flex;align-items:center;gap:10px}
-.mi li::before{content:'';width:6px;height:6px;background:var(--blue);border-radius:50%;flex-shrink:0}
-.testi{background:var(--bg2)}.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.tc{background:var(--bg);border-radius:24px;padding:36px 32px;border:1px solid transparent;transition:all .3s}
-.tc:hover{border-color:var(--bdr-l);box-shadow:var(--sh-m)}
-.ts{color:#FF9500;font-size:16px;margin-bottom:16px;letter-spacing:2px}
-.tt{font-size:15px;color:var(--t2);line-height:1.65;margin-bottom:24px}
-.ta{display:flex;align-items:center;gap:12px}
-.tav{width:40px;height:40px;border-radius:50%;background:var(--blue-g);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px}
-.tn{font-size:14px;font-weight:600}.ttg{font-size:12px;color:var(--t3)}
-.pricing{position:relative;overflow:hidden}
-.pricing::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,113,227,.03) 0%,transparent 60%);pointer-events:none}
-.pb{max-width:500px;margin:0 auto;background:var(--bg);border-radius:28px;border:2px solid var(--blue);padding:48px 44px;position:relative;box-shadow:0 0 0 1px rgba(0,113,227,.05),var(--sh-l)}
-.pbdg{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blue-g);color:#fff;padding:6px 20px;border-radius:980px;font-size:13px;font-weight:600;white-space:nowrap}
-.pln{font-size:13px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;margin-top:8px}
-.plt{font-size:28px;font-weight:700;letter-spacing:-.02em;margin-bottom:20px}
-.pam{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
-.pam .old{font-size:22px;color:var(--t3);text-decoration:line-through}.pam .big{font-size:56px;font-weight:700;letter-spacing:-.03em;line-height:1}.pam .cur{font-size:20px;font-weight:500;color:var(--t2)}
-.psv{font-size:14px;color:var(--blue);font-weight:500;margin-bottom:28px}
-.pl{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
-.pl li{font-size:15px;color:var(--t2);display:flex;align-items:center;gap:12px}
-.pck{width:22px;height:22px;background:var(--blue-l);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.pck svg{width:12px;height:12px;fill:none;stroke:var(--blue);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.cr{display:flex;gap:8px;margin-bottom:8px}
-.cin{flex:1;background:var(--bg2);border:1.5px solid var(--bdr-l);border-radius:12px;padding:13px 16px;font-size:14px;font-family:var(--font);color:var(--t1);outline:none;transition:border-color .2s;font-weight:500}
-.cin:focus{border-color:var(--blue)}.cin::placeholder{color:var(--t3)}
-.cab{background:var(--bg2);border:1.5px solid var(--bdr-l);border-radius:12px;padding:13px 20px;font-size:14px;font-weight:600;color:var(--t2);cursor:pointer;font-family:var(--font);transition:all .2s}
-.cab:hover{border-color:var(--blue);color:var(--blue)}
-.cmsg{font-size:13px;min-height:20px;margin-bottom:20px;font-weight:500}.cmsg.ok{color:#34C759}.cmsg.er{color:#FF3B30}
-.bbtn{width:100%;background:var(--blue);color:#fff;padding:17px 32px;border-radius:14px;font-size:17px;font-weight:600;border:none;cursor:pointer;font-family:var(--font);transition:all .3s cubic-bezier(.22,1,.36,1)}
-.bbtn:hover{background:var(--blue-h);transform:scale(1.01);box-shadow:0 4px 20px rgba(0,113,227,.3)}.bbtn:active{transform:scale(.99)}
-.pft{text-align:center;margin-top:16px;font-size:13px;color:var(--t3)}
-.faq{background:var(--bg2)}.faqw{max-width:680px;margin:0 auto}
-.fqi{border-bottom:1px solid var(--bdr-l)}.fqi:first-child{border-top:1px solid var(--bdr-l)}
-.fqq{display:flex;justify-content:space-between;align-items:center;padding:22px 0;cursor:pointer;user-select:none}
-.fqq span{font-size:16px;font-weight:600}
-.fqt{width:28px;height:28px;border-radius:50%;background:var(--bg);border:1px solid var(--bdr-l);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--t3);transition:all .3s;flex-shrink:0}
-.fqi.op .fqt{background:var(--blue);border-color:var(--blue);color:#fff;transform:rotate(45deg)}
-.fqa{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}.fqi.op .fqa{max-height:200px}
-.fqai{padding:0 0 22px;font-size:15px;color:var(--t2);line-height:1.65}
-.cta-end{text-align:center;padding:100px 24px}
-.cta-end h2{font-size:clamp(36px,5vw,56px);font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-bottom:16px}
-.cta-end h2 .bl{color:var(--blue)}.cta-end p{font-size:18px;color:var(--t2);margin-bottom:32px}
-footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg2)}
-.ftin{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-.ftc{font-size:12px;color:var(--t3)}.ftl{display:flex;gap:24px}.ftl a{font-size:12px;color:var(--t3);text-decoration:none;transition:color .2s}.ftl a:hover{color:var(--t1)}
+.vid-w{max-width:820px;margin:48px auto 0}.vid-box{position:relative;aspect-ratio:16/9;background:#000;border-radius:20px;overflow:hidden;cursor:pointer;box-shadow:var(--sh-xl)}.vid-box:hover .vid-pl{transform:scale(1.1)}.vid-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,113,227,.08),rgba(0,0,0,.8));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}.vid-pl{width:72px;height:72px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 30px rgba(0,113,227,.4);transition:transform .3s}.vid-lb{color:#fff;font-size:14px;font-weight:500;opacity:.85}.vid-bg{position:absolute;bottom:16px;left:16px;font-size:11px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.trust{padding:40px 0;border-top:1px solid var(--bdr-l);border-bottom:1px solid var(--bdr-l)}.trust-r{display:flex;justify-content:center;gap:48px;flex-wrap:wrap}.trust-i{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--t2);font-weight:500}.trust-ic{width:36px;height:36px;background:var(--blue-l);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+section{padding:100px 0}.s-ey{font-size:14px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}.s-t{font-size:clamp(36px,5vw,52px);font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-bottom:12px}.s-d{font-size:18px;color:var(--t2);line-height:1.5;max-width:540px}.s-hc{text-align:center;margin-bottom:64px}.s-hc .s-d{margin:0 auto}
+.feat{background:var(--bg2)}.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.fc{background:var(--bg);border-radius:24px;padding:40px 32px;transition:all .4s cubic-bezier(.22,1,.36,1);border:1px solid transparent}.fc:hover{transform:translateY(-4px);box-shadow:var(--sh-l);border-color:var(--bdr-l)}.fi{width:52px;height:52px;background:var(--blue-l);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:20px}.fc h3{font-size:20px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}.fc p{font-size:15px;color:var(--t2);line-height:1.6}
+.mw{max-width:720px;margin:0 auto}.mc{border:1px solid var(--bdr-l);border-radius:16px;margin-bottom:10px;overflow:hidden;background:var(--bg);transition:all .3s}.mc:hover{border-color:var(--bdr)}.mc.op{border-color:var(--blue);box-shadow:0 2px 12px rgba(0,113,227,.08)}.mh{display:flex;align-items:center;gap:16px;padding:20px 24px;cursor:pointer;user-select:none}.mn{width:40px;height:40px;background:var(--blue-l);color:var(--blue);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;transition:all .3s}.mc.op .mn{background:var(--blue);color:#fff}.mtt{flex:1;font-size:16px;font-weight:600}.mm{font-size:13px;color:var(--t3)}.ma{color:var(--t3);font-size:18px;transition:transform .3s;flex-shrink:0}.mc.op .ma{transform:rotate(90deg);color:var(--blue)}.mb{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}.mc.op .mb{max-height:300px}.mi{padding:0 24px 20px 80px}.mi ul{list-style:none;display:flex;flex-direction:column;gap:10px}.mi li{font-size:14px;color:var(--t2);display:flex;align-items:center;gap:10px}.mi li::before{content:'';width:6px;height:6px;background:var(--blue);border-radius:50%;flex-shrink:0}
+.testi{background:var(--bg2)}.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.tc{background:var(--bg);border-radius:24px;padding:36px 32px;border:1px solid transparent;transition:all .3s}.tc:hover{border-color:var(--bdr-l);box-shadow:var(--sh-m)}.ts{color:#FF9500;font-size:16px;margin-bottom:16px;letter-spacing:2px}.tt{font-size:15px;color:var(--t2);line-height:1.65;margin-bottom:24px}.ta{display:flex;align-items:center;gap:12px}.tav{width:40px;height:40px;border-radius:50%;background:var(--blue-g);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px}.tn{font-size:14px;font-weight:600}.ttg{font-size:12px;color:var(--t3)}
+.pricing{position:relative;overflow:hidden}.pricing::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,113,227,.03) 0%,transparent 60%);pointer-events:none}.pb{max-width:500px;margin:0 auto;background:var(--bg);border-radius:28px;border:2px solid var(--blue);padding:48px 44px;position:relative;box-shadow:0 0 0 1px rgba(0,113,227,.05),var(--sh-l)}.pbdg{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blue-g);color:#fff;padding:6px 20px;border-radius:980px;font-size:13px;font-weight:600;white-space:nowrap}.pln{font-size:13px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;margin-top:8px}.plt{font-size:28px;font-weight:700;letter-spacing:-.02em;margin-bottom:20px}.pam{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}.pam .old{font-size:22px;color:var(--t3);text-decoration:line-through}.pam .big{font-size:56px;font-weight:700;letter-spacing:-.03em;line-height:1}.pam .cur{font-size:20px;font-weight:500;color:var(--t2)}.psv{font-size:14px;color:var(--blue);font-weight:500;margin-bottom:28px}.pl{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:28px}.pl li{font-size:15px;color:var(--t2);display:flex;align-items:center;gap:12px}.pck{width:22px;height:22px;background:var(--blue-l);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}.pck svg{width:12px;height:12px;fill:none;stroke:var(--blue);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cr{display:flex;gap:8px;margin-bottom:8px}.cin{flex:1;background:var(--bg2);border:1.5px solid var(--bdr-l);border-radius:12px;padding:13px 16px;font-size:14px;font-family:var(--font);color:var(--t1);outline:none;transition:border-color .2s;font-weight:500}.cin:focus{border-color:var(--blue)}.cin::placeholder{color:var(--t3)}.cab{background:var(--bg2);border:1.5px solid var(--bdr-l);border-radius:12px;padding:13px 20px;font-size:14px;font-weight:600;color:var(--t2);cursor:pointer;font-family:var(--font);transition:all .2s}.cab:hover{border-color:var(--blue);color:var(--blue)}.cmsg{font-size:13px;min-height:20px;margin-bottom:20px;font-weight:500}.cmsg.ok{color:#34C759}.cmsg.er{color:#FF3B30}
+.bbtn{width:100%;background:var(--blue);color:#fff;padding:17px 32px;border-radius:14px;font-size:17px;font-weight:600;border:none;cursor:pointer;font-family:var(--font);transition:all .3s cubic-bezier(.22,1,.36,1)}.bbtn:hover{background:var(--blue-h);transform:scale(1.01);box-shadow:0 4px 20px rgba(0,113,227,.3)}.bbtn:active{transform:scale(.99)}.pft{text-align:center;margin-top:16px;font-size:13px;color:var(--t3)}
+.faq{background:var(--bg2)}.faqw{max-width:680px;margin:0 auto}.fqi{border-bottom:1px solid var(--bdr-l)}.fqi:first-child{border-top:1px solid var(--bdr-l)}.fqq{display:flex;justify-content:space-between;align-items:center;padding:22px 0;cursor:pointer;user-select:none}.fqq span{font-size:16px;font-weight:600}.fqt{width:28px;height:28px;border-radius:50%;background:var(--bg);border:1px solid var(--bdr-l);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--t3);transition:all .3s;flex-shrink:0}.fqi.op .fqt{background:var(--blue);border-color:var(--blue);color:#fff;transform:rotate(45deg)}.fqa{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}.fqi.op .fqa{max-height:200px}.fqai{padding:0 0 22px;font-size:15px;color:var(--t2);line-height:1.65}
+.cta-end{text-align:center;padding:100px 24px}.cta-end h2{font-size:clamp(36px,5vw,56px);font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-bottom:16px}.cta-end h2 .bl{color:var(--blue)}.cta-end p{font-size:18px;color:var(--t2);margin-bottom:32px}
+footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg2)}.ftin{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}.ftc{font-size:12px;color:var(--t3)}.ftl{display:flex;gap:24px}.ftl a{font-size:12px;color:var(--t3);text-decoration:none;transition:color .2s}.ftl a:hover{color:var(--t1)}
 @media(max-width:900px){.fg,.tg{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.nk{display:none}.mt{display:block}.trust-r{gap:24px}.nl-t{display:none}}
 @media(max-width:600px){section{padding:72px 0}.hero{padding:56px 24px 40px}.hero-ctas{flex-direction:column;align-items:center}.btn-m,.btn-s{width:100%;justify-content:center}.pb{padding:40px 28px}.ftin{flex-direction:column;text-align:center}.hero-new{font-size:40px}}
 </style>
 </head>
 <body>
-<div class="ann">🔥 Limited offer: use code <strong>CWALK20</strong> for 20% off. <a href="#pricing">Claim discount →</a></div>
-<nav><div class="ni"><a href="#" class="nl"><span class="nl-b">C-Walk <span>Academy</span></span><span class="nl-s"></span><span class="nl-t">by Patty Moves</span></a><div class="nk"><a href="#features">What's Inside</a><a href="#curriculum">Tutorials</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a><a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="nb">Get Access</a></div><button class="mt" onclick="document.querySelector('.nk').classList.toggle('show')">☰</button></div></nav>
+<div class="ann">Limited offer: use code <strong>CWALK20</strong> for 20% off. <a href="#pricing">Claim discount</a></div>
+<nav><div class="ni"><a href="#" class="nl"><span class="nl-b">C-Walk <span>Academy</span></span><span class="nl-s"></span><span class="nl-t">by Patty Moves</span></a><div class="nk"><a href="#features">What's Inside</a><a href="#curriculum">Tutorials</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a><a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="nb">Get Access</a></div><button class="mt" onclick="document.querySelector('.nk').classList.toggle('show')">&#9776;</button></div></nav>
 <section class="hero"><div class="container">
 <div class="hero-ey"><span class="dot"></span> New Course 2026</div>
 <h1>Learn C-Walk.<br><span class="bl">Step by step.</span></h1>
-<p class="hero-sub">The complete C-Walk course by Patty Moves. 10 video tutorials in 4K. 60 minutes of focused content. Go from zero to your own style — at your own pace.</p>
+<p class="hero-sub">The complete C-Walk course by Patty Moves. 10 video tutorials in 4K. 60 minutes of focused content. Go from zero to your own style.</p>
 <div class="hero-pricing">
-<div class="hero-pm"><span class="hero-old">29,99 €</span><span class="hero-new"><span>23,99 €</span></span></div>
-<div class="hero-sv">You save 6,00 € with code CWALK20</div>
+<div class="hero-pm"><span class="hero-old">29,99 &euro;</span><span class="hero-new"><span>23,99 &euro;</span></span></div>
+<div class="hero-sv">You save 6,00 &euro; with code CWALK20</div>
 <div class="hero-cd">Apply code <code>CWALK20</code> at checkout for 20% off</div>
 </div>
 <div class="hero-ctas">
-<a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="btn-m">Get Started for 23,99 €</a>
-<a href="#curriculum" class="btn-s">▶ See the tutorials</a>
+<a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="btn-m">Get Started for 23,99 &euro;</a>
+<a href="#curriculum" class="btn-s">&#9654; See the tutorials</a>
 </div>
 </div>
-<div class="vid-w"><div class="vid-box" id="vidWrap"><div class="vid-ov"><div class="vid-pl"><svg width="26" height="26" fill="#fff" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div><div class="vid-lb">Watch the preview</div></div><div class="vid-bg">C-Walk Academy</div></div></div>
+<div class="vid-w"><div class="vid-box"><div class="vid-ov"><div class="vid-pl"><svg width="26" height="26" fill="#fff" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div><div class="vid-lb">Watch the preview</div></div><div class="vid-bg">C-Walk Academy</div></div></div>
 </section>
 <div class="trust"><div class="container"><div class="trust-r">
-<div class="trust-i"><div class="trust-ic">⭐</div><span><strong>4.9/5</strong> Rating</span></div>
-<div class="trust-i"><div class="trust-ic">👥</div><span><strong>100+</strong> Students</span></div>
-<div class="trust-i"><div class="trust-ic">🎬</div><span><strong>10</strong> 4K Videos</span></div>
-<div class="trust-i"><div class="trust-ic">⏱️</div><span><strong>60 min</strong> Content</span></div>
-<div class="trust-i"><div class="trust-ic">♾️</div><span><strong>Lifetime</strong> Access</span></div>
+<div class="trust-i"><div class="trust-ic">&#11088;</div><span><strong>4.9/5</strong> Rating</span></div>
+<div class="trust-i"><div class="trust-ic">&#128101;</div><span><strong>100+</strong> Students</span></div>
+<div class="trust-i"><div class="trust-ic">&#127909;</div><span><strong>10</strong> 4K Videos</span></div>
+<div class="trust-i"><div class="trust-ic">&#9201;</div><span><strong>60 min</strong> Content</span></div>
+<div class="trust-i"><div class="trust-ic">&#9854;</div><span><strong>Lifetime</strong> Access</span></div>
 </div></div></div>
 <section class="feat" id="features"><div class="container">
-<div class="s-hc rv"><div class="s-ey">What's included</div><h2 class="s-t">Everything you need. Nothing you don't.</h2><p class="s-d">A focused course that takes you from zero to confident C-Walker. No fluff, no filler — just the moves that matter.</p></div>
+<div class="s-hc rv"><div class="s-ey">What's included</div><h2 class="s-t">Everything you need. Nothing you don't.</h2><p class="s-d">A focused course that takes you from zero to confident C-Walker. No fluff, no filler.</p></div>
 <div class="fg">
-<div class="fc rv"><div class="fi">🎥</div><h3>10 Video Tutorials in 4K</h3><p>Each move filmed from multiple angles with slow-motion breakdowns. Clear, easy to follow, impossible to get wrong.</p></div>
-<div class="fc rv rv-d1"><div class="fi">⏱️</div><h3>60 Minutes of Content</h3><p>Focused, no-nonsense lessons. Every minute is packed with value — learn the essentials without wasting time.</p></div>
-<div class="fc rv rv-d2"><div class="fi">📱</div><h3>Learn Anywhere</h3><p>Works on phone, tablet, and desktop. Practice at home, in the park, or wherever you want.</p></div>
-<div class="fc rv"><div class="fi">🗺️</div><h3>Clear Learning Path</h3><p>Beginner → Intermediate → Advanced. A structured path that builds logically from one move to the next.</p></div>
-<div class="fc rv rv-d1"><div class="fi">🔄</div><h3>Lifetime Access & Updates</h3><p>Pay once, learn forever. When new tutorials drop, you get them automatically — no extra charge.</p></div>
-<div class="fc rv rv-d2"><div class="fi">🏆</div><h3>Develop Your Own Style</h3><p>It's not just about copying moves — it's about finding your own flow and expression.</p></div>
+<div class="fc rv"><div class="fi">&#127909;</div><h3>10 Video Tutorials in 4K</h3><p>Each move filmed from multiple angles with slow-motion breakdowns. Clear and easy to follow.</p></div>
+<div class="fc rv rv-d1"><div class="fi">&#9201;</div><h3>60 Minutes of Content</h3><p>Focused, no-nonsense lessons. Every minute is packed with value.</p></div>
+<div class="fc rv rv-d2"><div class="fi">&#128241;</div><h3>Learn Anywhere</h3><p>Works on phone, tablet, and desktop. Your course travels with you.</p></div>
+<div class="fc rv"><div class="fi">&#128506;</div><h3>Clear Learning Path</h3><p>Beginner to Advanced. A structured path that builds logically.</p></div>
+<div class="fc rv rv-d1"><div class="fi">&#128260;</div><h3>Lifetime Access</h3><p>Pay once, learn forever. New tutorials included automatically.</p></div>
+<div class="fc rv rv-d2"><div class="fi">&#127942;</div><h3>Develop Your Style</h3><p>Find your own flow and expression. That is the real art.</p></div>
 </div></div></section>
 <section id="curriculum"><div class="container">
-<div class="s-hc rv"><div class="s-ey">10 Tutorials</div><h2 class="s-t">Your path to C-Walk.</h2><p class="s-d">10 focused video tutorials that take you from your first step to creating your own combos.</p></div>
+<div class="s-hc rv"><div class="s-ey">10 Tutorials</div><h2 class="s-t">Your path to C-Walk.</h2><p class="s-d">10 focused video tutorials from first step to your own combos.</p></div>
 <div class="mw">
-<div class="mc op rv"><div class="mh" onclick="tM(this)"><div class="mn">01</div><div class="mtt">The V-Step — Your Foundation</div><div class="mm">~7 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Proper stance and body posture</li><li>The basic V-Step pattern</li><li>Common mistakes and how to fix them</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">02</div><div class="mtt">Heel-Toe Basics</div><div class="mm">~6 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Heel-toe movement breakdown</li><li>Weight shifting technique</li><li>Building rhythm and control</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">03</div><div class="mtt">The Shuffle</div><div class="mm">~7 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Side-to-side shuffle technique</li><li>Speed variations</li><li>Smooth direction changes</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">04</div><div class="mtt">Slides & Glides</div><div class="mm">~6 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Forward and backward slides</li><li>Moonwalk-style glides</li><li>Surface and shoe tips</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">05</div><div class="mtt">The X-Step</div><div class="mm">~6 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Cross-step pattern</li><li>Foot placement precision</li><li>Combining with V-Step</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">06</div><div class="mtt">Spins & Turns</div><div class="mm">~5 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Basic 180 and 360 turns</li><li>Balance during rotation</li><li>Entry and exit transitions</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">07</div><div class="mtt">Connecting Moves — Transitions</div><div class="mm">~6 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Smooth move-to-move transitions</li><li>Building 2-3 move sequences</li><li>Keeping your flow natural</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">08</div><div class="mtt">Your First Combo</div><div class="mm">~6 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Putting moves together</li><li>Beat-matching to music</li><li>Practice routine walkthrough</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">09</div><div class="mtt">Style & Expression</div><div class="mm">~5 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Adding arm movements</li><li>Finding your personal flavor</li><li>Confidence and stage presence</li></ul></div></div></div>
-<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">10</div><div class="mtt">Full Routine — Putting It All Together</div><div class="mm">~6 min</div><div class="ma">›</div></div><div class="mb"><div class="mi"><ul><li>Complete performance routine</li><li>Filming tips for social media</li><li>Where to go from here</li></ul></div></div></div>
+<div class="mc op rv"><div class="mh" onclick="tM(this)"><div class="mn">01</div><div class="mtt">The V-Step</div><div class="mm">~7 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Proper stance and posture</li><li>The basic V-Step pattern</li><li>Common mistakes to avoid</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">02</div><div class="mtt">Heel-Toe Basics</div><div class="mm">~6 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Heel-toe breakdown</li><li>Weight shifting</li><li>Building rhythm</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">03</div><div class="mtt">The Shuffle</div><div class="mm">~7 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Side-to-side shuffle</li><li>Speed variations</li><li>Direction changes</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">04</div><div class="mtt">Slides and Glides</div><div class="mm">~6 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Forward and backward slides</li><li>Moonwalk-style glides</li><li>Surface and shoe tips</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">05</div><div class="mtt">The X-Step</div><div class="mm">~6 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Cross-step pattern</li><li>Foot placement</li><li>Combining with V-Step</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">06</div><div class="mtt">Spins and Turns</div><div class="mm">~5 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>180 and 360 turns</li><li>Balance during rotation</li><li>Entry and exit transitions</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">07</div><div class="mtt">Transitions</div><div class="mm">~6 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Smooth move-to-move flow</li><li>2-3 move sequences</li><li>Keeping it natural</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">08</div><div class="mtt">Your First Combo</div><div class="mm">~6 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Putting moves together</li><li>Beat-matching to music</li><li>Practice routine</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">09</div><div class="mtt">Style and Expression</div><div class="mm">~5 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Adding arm movements</li><li>Finding your flavor</li><li>Confidence and presence</li></ul></div></div></div>
+<div class="mc rv"><div class="mh" onclick="tM(this)"><div class="mn">10</div><div class="mtt">Full Routine</div><div class="mm">~6 min</div><div class="ma">&rsaquo;</div></div><div class="mb"><div class="mi"><ul><li>Complete performance routine</li><li>Filming for social media</li><li>Where to go from here</li></ul></div></div></div>
 </div></div></section>
 <section class="testi" id="testimonials"><div class="container">
-<div class="s-hc rv"><div class="s-ey">Reviews</div><h2 class="s-t">Loved by 100+ students.</h2><p class="s-d">Real results from real people. Join the C-Walk Academy family.</p></div>
+<div class="s-hc rv"><div class="s-ey">Reviews</div><h2 class="s-t">Loved by 100+ students.</h2><p class="s-d">Real results from real people.</p></div>
 <div class="tg">
-<div class="tc rv"><div class="ts">★★★★★</div><p class="tt">"I had zero dance experience. After one week my friends asked where I learned to move like that. Patty makes everything so easy to follow!"</p><div class="ta"><div class="tav">MJ</div><div><div class="tn">Marcus J.</div><div class="ttg">Complete beginner</div></div></div></div>
-<div class="tc rv rv-d1"><div class="ts">★★★★★</div><p class="tt">"Finally a course that doesn't just show moves but teaches you HOW to develop your own style. Super clean and well structured."</p><div class="ta"><div class="tav">SK</div><div><div class="tn">Sarah K.</div><div class="ttg">Intermediate dancer</div></div></div></div>
-<div class="tc rv rv-d2"><div class="ts">★★★★★</div><p class="tt">"Best money I've spent on a course. 10 tutorials, straight to the point, incredible quality. I was doing combos within days."</p><div class="ta"><div class="tav">DR</div><div><div class="tn">David R.</div><div class="ttg">3 months in</div></div></div></div>
+<div class="tc rv"><div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="tt">"After one week my friends asked where I learned to move like that. Patty makes everything so easy to follow!"</p><div class="ta"><div class="tav">MJ</div><div><div class="tn">Marcus J.</div><div class="ttg">Complete beginner</div></div></div></div>
+<div class="tc rv rv-d1"><div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="tt">"Finally a course that teaches you HOW to develop your own style. Super clean and well structured."</p><div class="ta"><div class="tav">SK</div><div><div class="tn">Sarah K.</div><div class="ttg">Intermediate dancer</div></div></div></div>
+<div class="tc rv rv-d2"><div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="tt">"10 tutorials, straight to the point, incredible quality. I was doing combos within days."</p><div class="ta"><div class="tav">DR</div><div><div class="tn">David R.</div><div class="ttg">3 months in</div></div></div></div>
 </div></div></section>
 <section class="pricing" id="pricing"><div class="container">
-<div class="s-hc rv"><div class="s-ey">Get Access</div><h2 class="s-t">One payment. Lifetime access.</h2><p class="s-d">No subscription, no hidden fees. Pay once — learn forever.</p></div>
+<div class="s-hc rv"><div class="s-ey">Get Access</div><h2 class="s-t">One payment. Lifetime access.</h2><p class="s-d">No subscription, no hidden fees. Pay once, learn forever.</p></div>
 <div class="pb rv">
 <div class="pbdg">Most Popular</div>
 <div class="pln">C-Walk Academy</div>
 <div class="plt">Full Access</div>
-<div class="pam"><span class="old" id="prOld">29,99 €</span><span class="big" id="prNew">23,99</span><span class="cur">€</span></div>
-<div class="psv" id="prSave">You save 6,00 € with code CWALK20</div>
+<div class="pam"><span class="old" id="prOld">29,99 &euro;</span><span class="big" id="prNew">23,99</span><span class="cur">&euro;</span></div>
+<div class="psv" id="prSave">You save 6,00 &euro; with code CWALK20</div>
 <ul class="pl">
 <li><span class="pck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span> All 10 video tutorials in 4K (60 min)</li>
-<li><span class="pck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span> Lifetime access & future updates</li>
+<li><span class="pck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span> Lifetime access and future updates</li>
 <li><span class="pck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span> Works on all devices</li>
 <li><span class="pck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span> Beginner-friendly step-by-step</li>
 <li><span class="pck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span> Future bonus tutorials included</li>
 <li><span class="pck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span> 14-day money-back guarantee</li>
 </ul>
 <div class="cr"><input type="text" class="cin" id="codeIn" placeholder="Enter discount code..." value="CWALK20"><button class="cab" onclick="applyCode()">Apply</button></div>
-<div class="cmsg ok" id="codeMsg">✓ Code CWALK20 active — 20% off</div>
-<button class="bbtn" onclick="window.open('https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02','_blank')">Get Access — <span id="buyPr">23,99 €</span></button>
-<div class="pft">🔒 Secure checkout via Stripe · 14-day money-back guarantee</div>
+<div class="cmsg ok" id="codeMsg">Code CWALK20 active</div>
+<button class="bbtn" onclick="window.open('https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02','_blank')">Get Access &mdash; <span id="buyPr">23,99 &euro;</span></button>
+<div class="pft">Secure checkout via Stripe - 14-day money-back guarantee</div>
 </div></div></section>
 <section class="faq" id="faq"><div class="container">
 <div class="s-hc rv"><div class="s-ey">FAQ</div><h2 class="s-t">Got questions?</h2></div>
 <div class="faqw">
-<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>Do I need any dance experience?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Not at all! C-Walk Academy is designed for complete beginners. We start from absolute zero and build up step by step. All you need is comfortable shoes and the willingness to learn.</div></div></div>
-<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>How long do I have access?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Forever! You pay once and get lifetime access — including any future tutorials or bonus content added to the course.</div></div></div>
-<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>How does the discount code work?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Enter the code CWALK20 at checkout and you will instantly get 20% off — paying just 23,99 € instead of 29,99 €.</div></div></div>
-<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>Is there a money-back guarantee?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Yes! You have 14 days to try the full course. If you are not happy, you get a full refund — no questions asked.</div></div></div>
-<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>What devices can I use?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">All of them! The course works on phone, tablet, and desktop. All you need is an internet connection.</div></div></div>
-<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>How long is the course?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">C-Walk Academy includes 10 video tutorials in 4K totaling about 60 minutes of focused content. Each tutorial is 5-7 minutes long.</div></div></div>
+<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>Do I need any dance experience?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Not at all! C-Walk Academy is designed for complete beginners. All you need is comfortable shoes and willingness to learn.</div></div></div>
+<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>How long do I have access?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Forever! You pay once and get lifetime access including any future tutorials added to the course.</div></div></div>
+<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>How does the discount code work?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Enter the code CWALK20 at Stripe checkout and you will get 20% off, paying just 23,99 EUR instead of 29,99 EUR.</div></div></div>
+<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>Is there a money-back guarantee?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">Yes! You have 14 days to try the full course. If you are not happy, you get a full refund, no questions asked.</div></div></div>
+<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>What devices can I use?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">All of them! Phone, tablet, and desktop. All you need is an internet connection.</div></div></div>
+<div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>How long is the course?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">10 video tutorials in 4K, about 60 minutes total. Each tutorial is 5-7 minutes long.</div></div></div>
 </div></div></section>
 <section class="cta-end"><div class="container">
 <h2 class="rv">Ready for your<br>first <span class="bl">move</span>?</h2>
 <p class="rv">Join 100+ students and start learning today.</p>
-<a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="btn-m rv" style="padding:18px 40px;font-size:18px">Get Started — 23,99 €</a>
+<a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="btn-m rv" style="padding:18px 40px;font-size:18px">Get Started &mdash; 23,99 &euro;</a>
 </div></section>
 <footer><div class="container ftin">
-<div class="ftc">© 2026 C-Walk Academy · PKT Media. All rights reserved.</div>
-<div class="ftl"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="/cdn-cgi/l/email-protection#1f6f7e6b6d746b5f687a7d317b7a">Contact</a></div>
+<div class="ftc">&copy; 2026 C-Walk Academy - PKT Media. All rights reserved.</div>
+<div class="ftl"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a id="contactLink" href="#">Contact</a></div>
 </div></footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+document.getElementById('contactLink').href='mai'+'lto:'+'pat'+'rkt'+'@'+'web'+'.de';
 var disc=true,BASE=29.99;
-function applyCode(){
-  var v=document.getElementById('codeIn').value.trim().toUpperCase().replace(/[-_ ]/g,'');
-  var m=document.getElementById('codeMsg');
-  if(v==='CWALK20'){disc=true;m.className='cmsg ok';m.textContent='✓ Code CWALK20 active — 20% off';}
-  else{disc=false;m.className='cmsg er';m.textContent='✗ Invalid code. Try CWALK20 ;)';}
-  updatePr();
-}
-function updatePr(){
-  var f=disc?(BASE*0.8).toFixed(2):BASE.toFixed(2);
-  var fc=f.replace('.',',');
-  document.getElementById('prNew').textContent=fc;
-  document.getElementById('buyPr').textContent=fc+' €';
-  var sv=document.getElementById('prSave'),ol=document.getElementById('prOld');
-  if(disc){sv.textContent='You save '+(BASE-parseFloat(f)).toFixed(2).replace('.',',')+' € with code CWALK20';sv.style.display='';ol.style.display='';}
-  else{sv.style.display='none';ol.style.display='none';}
-}
+function applyCode(){var v=document.getElementById('codeIn').value.trim().toUpperCase().replace(/[-_ ]/g,'');var m=document.getElementById('codeMsg');if(v==='CWALK20'){disc=true;m.className='cmsg ok';m.textContent='Code CWALK20 active - 20% off';}else{disc=false;m.className='cmsg er';m.textContent='Invalid code. Try CWALK20';}updatePr();}
+function updatePr(){var f=disc?(BASE*0.8).toFixed(2):BASE.toFixed(2);var fc=f.replace('.',',');document.getElementById('prNew').textContent=fc;document.getElementById('buyPr').textContent=fc+' \u20AC';var sv=document.getElementById('prSave'),ol=document.getElementById('prOld');if(disc){sv.textContent='You save '+(BASE-parseFloat(f)).toFixed(2).replace('.',',')+' \u20AC with code CWALK20';sv.style.display='';ol.style.display='';}else{sv.style.display='none';ol.style.display='none';}}
 function tM(el){var c=el.parentElement,w=c.classList.contains('op');document.querySelectorAll('.mc').forEach(function(m){m.classList.remove('op');});if(!w)c.classList.add('op');}
 function tF(el){var c=el.parentElement,w=c.classList.contains('op');document.querySelectorAll('.fqi').forEach(function(f){f.classList.remove('op');});if(!w)c.classList.add('op');}
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}});},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.rv').forEach(function(el){obs.observe(el);});
-var ld=document.createElement('script');
-ld.type='application/ld+json';
-ld.textContent='{"@context":"https://schema.org","@type":"Course","name":"C-Walk Academy by Patty Moves","description":"The ultimate C-Walk online course.","provider":{"@type":"Organization","name":"Patty Moves"},"offers":{"@type":"Offer","price":"29.99","priceCurrency":"EUR","availability":"https://schema.org/InStock"},"a
+var ld=document.createElement('script');ld.type='application/ld+json';
+ld.textContent='{"@context":"https://schema.org","@type":"Course","name":"C-Walk Academy","description":"The ultimate C-Walk online course by Patty Moves.","provider":{"@type":"Organization","name":"Patty Moves"},"offers":{"@type":"Offer","price":"29.99","priceCurrency":"EUR","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"100"}}';
+document.head.appendChild(ld);
+</script>
+</body>
+</html>
