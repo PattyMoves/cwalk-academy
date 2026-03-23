@@ -54,13 +54,35 @@ section{padding:100px 0}.s-ey{font-size:14px;font-weight:600;color:var(--blue);t
 .faq{background:var(--bg2)}.faqw{max-width:680px;margin:0 auto}.fqi{border-bottom:1px solid var(--bdr-l)}.fqi:first-child{border-top:1px solid var(--bdr-l)}.fqq{display:flex;justify-content:space-between;align-items:center;padding:22px 0;cursor:pointer;user-select:none}.fqq span{font-size:16px;font-weight:600}.fqt{width:28px;height:28px;border-radius:50%;background:var(--bg);border:1px solid var(--bdr-l);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--t3);transition:all .3s;flex-shrink:0}.fqi.op .fqt{background:var(--blue);border-color:var(--blue);color:#fff;transform:rotate(45deg)}.fqa{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}.fqi.op .fqa{max-height:200px}.fqai{padding:0 0 22px;font-size:15px;color:var(--t2);line-height:1.65}
 .cta-end{text-align:center;padding:100px 24px}.cta-end h2{font-size:clamp(36px,5vw,56px);font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-bottom:16px}.cta-end h2 .bl{color:var(--blue)}.cta-end p{font-size:18px;color:var(--t2);margin-bottom:32px}
 footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg2)}.ftin{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}.ftc{font-size:12px;color:var(--t3)}.ftl{display:flex;gap:24px}.ftl a{font-size:12px;color:var(--t3);text-decoration:none;transition:color .2s}.ftl a:hover{color:var(--t1)}
-@media(max-width:900px){.fg,.tg{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.nk{display:none}.mt{display:block}.trust-r{gap:24px}.nl-t{display:none}}
-@media(max-width:600px){section{padding:72px 0}.hero{padding:56px 24px 40px}.hero-ctas{flex-direction:column;align-items:center}.btn-m,.btn-s{width:100%;justify-content:center}.pb{padding:40px 28px}.ftin{flex-direction:column;text-align:center}.hero-new{font-size:40px}}
+@media(max-width:900px){.fg,.tg{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.nk{display:none}.nk.show{display:flex;flex-direction:column;position:absolute;top:52px;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);padding:16px 24px 24px;border-bottom:1px solid var(--bdr-l);gap:0;z-index:999}.nk.show a{padding:14px 0;border-bottom:1px solid var(--bdr-l);font-size:16px;color:var(--t1)}.nk.show .nb{margin-top:12px;text-align:center;border-bottom:none}.mt{display:block}.trust-r{gap:24px}.nl-t{display:none}}
+@media(max-width:600px){section{padding:72px 0}.hero{padding:56px 24px 40px}.hero-ctas{flex-direction:column;align-items:center}.btn-m,.btn-s{width:100%;justify-content:center}.pb{padding:40px 28px}.ftin{flex-direction:column;text-align:center}.hero-new{font-size:40px}.ps-info{flex-direction:column;align-items:center}.ps-badge{width:100%;max-width:400px}.calendly-wrap .calendly-inline-widget{height:580px!important}}
+/* ── Private Sessions ────────────────────────────────── */
+.private-sess{background:var(--bg)}
+.ps-info{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:52px}
+.ps-badge{display:flex;align-items:center;gap:14px;background:var(--bg2);border:1px solid var(--bdr-l);border-radius:18px;padding:18px 26px;flex:1;min-width:200px;max-width:280px;transition:all .3s}.ps-badge:hover{border-color:var(--blue);box-shadow:var(--sh-m)}
+.ps-ic{width:48px;height:48px;background:var(--blue-l);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.ps-tx strong{display:block;font-size:15px;font-weight:600;color:var(--t1);margin-bottom:3px}.ps-tx span{font-size:13px;color:var(--t3)}
+.ps-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-bottom:0}
+.ps-left{display:flex;flex-direction:column;gap:24px}
+.ps-inc{background:var(--bg2);border-radius:20px;padding:32px}
+.ps-inc h3{font-size:18px;font-weight:700;margin-bottom:16px;letter-spacing:-.02em}
+.ps-inc ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.ps-inc li{font-size:14px;color:var(--t2);display:flex;align-items:center;gap:10px}
+.ps-inc li::before{content:'';width:7px;height:7px;background:var(--blue);border-radius:50%;flex-shrink:0}
+.ps-price-card{background:var(--bg);border:2px solid var(--blue);border-radius:20px;padding:32px;text-align:center}
+.ps-price-card .ps-plabel{font-size:13px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.ps-price-card .ps-amount{font-size:48px;font-weight:700;letter-spacing:-.03em;line-height:1;margin-bottom:4px}
+.ps-price-card .ps-amount span{font-size:22px;font-weight:500;color:var(--t2)}
+.ps-price-card .ps-note{font-size:13px;color:var(--t3);margin-bottom:20px}
+.ps-scroll-btn{display:none;width:100%;background:var(--blue);color:#fff;padding:15px 24px;border-radius:12px;font-size:16px;font-weight:600;border:none;cursor:pointer;font-family:var(--font);transition:all .3s}.ps-scroll-btn:hover{background:var(--blue-h);transform:scale(1.01)}
+.calendly-wrap{border-radius:24px;overflow:hidden;border:1px solid var(--bdr-l);box-shadow:var(--sh-m);background:#fff}
+.calendly-wrap .calendly-inline-widget{min-width:280px;height:700px}
+@media(max-width:900px){.ps-split{grid-template-columns:1fr}.ps-scroll-btn{display:block}.calendly-wrap .calendly-inline-widget{height:650px!important}}
 </style>
 </head>
 <body>
 <div class="ann">Limited offer: use code <strong>CWALK20</strong> for 20% off. <a href="#pricing">Claim discount</a></div>
-<nav><div class="ni"><a href="#" class="nl"><span class="nl-b">C-Walk <span>Academy</span></span><span class="nl-s"></span><span class="nl-t">by Patty Moves</span></a><div class="nk"><a href="#features">What's Inside</a><a href="#curriculum">Tutorials</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a><a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="nb">Get Access</a></div><button class="mt" onclick="document.querySelector('.nk').classList.toggle('show')">&#9776;</button></div></nav>
+<nav><div class="ni"><a href="#" class="nl"><span class="nl-b">C-Walk <span>Academy</span></span><span class="nl-s"></span><span class="nl-t">by Patty Moves</span></a><div class="nk"><a href="#features">What's Inside</a><a href="#curriculum">Tutorials</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a><a href="#private-session">Private Session</a><a href="https://buy.stripe.com/28E6oH7SBeddbOc8wb1kA02" target="_blank" class="nb">Get Access</a></div><button class="mt" onclick="document.querySelector('.nk').classList.toggle('show')">&#9776;</button></div></nav>
 <section class="hero"><div class="container">
 <div class="hero-ey"><span class="dot"></span> New Course 2026</div>
 <h1>Learn C-Walk.<br><span class="bl">Step by step.</span></h1>
@@ -147,6 +169,84 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg2)}.f
 <div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>What devices can I use?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">All of them! Phone, tablet, and desktop. All you need is an internet connection.</div></div></div>
 <div class="fqi rv"><div class="fqq" onclick="tF(this)"><span>How long is the course?</span><div class="fqt">+</div></div><div class="fqa"><div class="fqai">12 video tutorials in 4K, about 60 minutes total. Each tutorial is 5-7 minutes long.</div></div></div>
 </div></div></section>
+<!-- ═══════════════════════════════════════════════════════
+     PRIVATE SESSIONS — Calendly + Google Meet
+     Ersetze "DEIN_CALENDLY_LINK" durch deinen echten Calendly-URL
+     z.B. https://calendly.com/pattymoves/private-session
+     ═══════════════════════════════════════════════════════ -->
+<section class="private-sess" id="private-session"><div class="container">
+<div class="s-hc rv">
+  <div class="s-ey">1-on-1 Coaching</div>
+  <h2 class="s-t">Private Session<br><span style="color:var(--blue)">with Patty Moves</span></h2>
+  <p class="s-d">Direktes Coaching, persönliches Feedback, deinen Stil entwickeln — live via Google Meet. Täglich buchbar.</p>
+</div>
+<div class="ps-info rv">
+  <div class="ps-badge">
+    <div class="ps-ic">&#128197;</div>
+    <div class="ps-tx"><strong>Täglich verfügbar</strong><span>17:00 – 21:00 Uhr</span></div>
+  </div>
+  <div class="ps-badge">
+    <div class="ps-ic">&#127909;</div>
+    <div class="ps-tx"><strong>Google Meet</strong><span>Link nach Buchung</span></div>
+  </div>
+  <div class="ps-badge">
+    <div class="ps-ic">&#9201;</div>
+    <div class="ps-tx"><strong>60 Minuten</strong><span>Fokussiertes 1-on-1</span></div>
+  </div>
+  <div class="ps-badge">
+    <div class="ps-ic">&#128081;</div>
+    <div class="ps-tx"><strong>Alle Levels</strong><span>Beginner bis Advanced</span></div>
+  </div>
+</div>
+<div class="ps-split rv">
+  <div class="ps-left">
+    <div class="ps-inc">
+      <h3>Was ist dabei?</h3>
+      <ul>
+        <li>Persönliche Technik-Analyse live im Video-Call</li>
+        <li>Korrektur deiner Moves in Echtzeit</li>
+        <li>Custom Lernplan für deine Ziele</li>
+        <li>Kombinations-Ideen speziell für deinen Stil</li>
+        <li>Recording-Tipps und Feedback zu deinen Videos</li>
+        <li>Q&amp;A — alles was du über C-Walk wissen willst</li>
+      </ul>
+    </div>
+    <div class="ps-price-card">
+      <div class="ps-plabel">Private Session</div>
+      <div class="ps-amount">99<span>,00 &euro;</span></div>
+      <div class="ps-note">60 Minuten &middot; Google Meet &middot; Sofortbestätigung</div>
+      <button class="ps-scroll-btn" onclick="document.getElementById('ps-widget').scrollIntoView({behavior:'smooth',block:'start'})">Jetzt buchen &#8595;</button>
+    </div>
+  </div>
+  <div id="ps-widget">
+    <div class="calendly-wrap">
+      <!-- Calendly inline widget -->
+      <div class="calendly-inline-widget"
+           data-url="DEIN_CALENDLY_LINK"
+           style="min-width:280px;height:700px;"></div>
+    </div>
+  </div>
+</div>
+</div></section>
+<!-- Calendly widget script — lädt nur wenn Sektion sichtbar ist -->
+<script>
+(function(){
+  var widgetEl=document.querySelector('.calendly-inline-widget');
+  if(!widgetEl)return;
+  var loaded=false;
+  var io=new IntersectionObserver(function(entries){
+    if(entries[0].isIntersecting&&!loaded){
+      loaded=true;
+      var s=document.createElement('script');
+      s.src='https://assets.calendly.com/assets/external/widget.js';
+      s.async=true;
+      document.body.appendChild(s);
+      io.disconnect();
+    }
+  },{threshold:0.05});
+  io.observe(widgetEl);
+})();
+</script>
 <section class="cta-end"><div class="container">
 <h2 class="rv">Ready for your<br>first <span class="bl">move</span>?</h2>
 <p class="rv">Join 100+ students and start learning today.</p>
