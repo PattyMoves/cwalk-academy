@@ -171,64 +171,64 @@ footer{padding:32px 0;border-top:1px solid var(--bdr-l);background:var(--bg2)}.f
 </div></div></section>
 <!-- ═══════════════════════════════════════════════════════
      PRIVATE SESSIONS — Calendly + Google Meet
-     Ersetze "DEIN_CALENDLY_LINK" durch deinen echten Calendly-URL
-     z.B. https://calendly.com/pattymoves/private-session
+     Replace "YOUR_CALENDLY_LINK" with your actual Calendly URL
+     e.g. https://calendly.com/pattymoves/private-session
      ═══════════════════════════════════════════════════════ -->
 <section class="private-sess" id="private-session"><div class="container">
 <div class="s-hc rv">
   <div class="s-ey">1-on-1 Coaching</div>
   <h2 class="s-t">Private Session<br><span style="color:var(--blue)">with Patty Moves</span></h2>
-  <p class="s-d">Direktes Coaching, persönliches Feedback, deinen Stil entwickeln — live via Google Meet. Täglich buchbar.</p>
+  <p class="s-d">Personal coaching, direct feedback, develop your own style — live via Google Meet. Available daily.</p>
 </div>
 <div class="ps-info rv">
   <div class="ps-badge">
     <div class="ps-ic">&#128197;</div>
-    <div class="ps-tx"><strong>Täglich verfügbar</strong><span>17:00 – 21:00 Uhr</span></div>
+    <div class="ps-tx"><strong>Daily availability</strong><span>5:00 PM – 9:00 PM</span></div>
   </div>
   <div class="ps-badge">
     <div class="ps-ic">&#127909;</div>
-    <div class="ps-tx"><strong>Google Meet</strong><span>Link nach Buchung</span></div>
+    <div class="ps-tx"><strong>Google Meet</strong><span>Link sent after booking</span></div>
   </div>
   <div class="ps-badge">
     <div class="ps-ic">&#9201;</div>
-    <div class="ps-tx"><strong>60 Minuten</strong><span>Fokussiertes 1-on-1</span></div>
+    <div class="ps-tx"><strong>60 Minutes</strong><span>Focused 1-on-1</span></div>
   </div>
   <div class="ps-badge">
     <div class="ps-ic">&#128081;</div>
-    <div class="ps-tx"><strong>Alle Levels</strong><span>Beginner bis Advanced</span></div>
+    <div class="ps-tx"><strong>All levels</strong><span>Beginner to Advanced</span></div>
   </div>
 </div>
 <div class="ps-split rv">
   <div class="ps-left">
     <div class="ps-inc">
-      <h3>Was ist dabei?</h3>
+      <h3>What's included?</h3>
       <ul>
-        <li>Persönliche Technik-Analyse live im Video-Call</li>
-        <li>Korrektur deiner Moves in Echtzeit</li>
-        <li>Custom Lernplan für deine Ziele</li>
-        <li>Kombinations-Ideen speziell für deinen Stil</li>
-        <li>Recording-Tipps und Feedback zu deinen Videos</li>
-        <li>Q&amp;A — alles was du über C-Walk wissen willst</li>
+        <li>Personal technique analysis live on video call</li>
+        <li>Real-time correction of your moves</li>
+        <li>Custom learning plan tailored to your goals</li>
+        <li>Combo ideas specifically for your style</li>
+        <li>Recording tips and feedback on your videos</li>
+        <li>Q&amp;A — anything you want to know about C-Walk</li>
       </ul>
     </div>
     <div class="ps-price-card">
       <div class="ps-plabel">Private Session</div>
       <div class="ps-amount">99<span>,00 &euro;</span></div>
-      <div class="ps-note">60 Minuten &middot; Google Meet &middot; Sofortbestätigung</div>
-      <button class="ps-scroll-btn" onclick="document.getElementById('ps-widget').scrollIntoView({behavior:'smooth',block:'start'})">Jetzt buchen &#8595;</button>
+      <div class="ps-note">60 min &middot; Google Meet &middot; Instant confirmation</div>
+      <button class="ps-scroll-btn" onclick="document.getElementById('ps-widget').scrollIntoView({behavior:'smooth',block:'start'})">Book now &#8595;</button>
     </div>
   </div>
   <div id="ps-widget">
     <div class="calendly-wrap">
       <!-- Calendly inline widget -->
       <div class="calendly-inline-widget"
-           data-url="DEIN_CALENDLY_LINK"
+           data-url="YOUR_CALENDLY_LINK"
            style="min-width:280px;height:700px;"></div>
     </div>
   </div>
 </div>
 </div></section>
-<!-- Calendly widget script — lädt nur wenn Sektion sichtbar ist -->
+<!-- Calendly widget script — loads lazily when section enters viewport -->
 <script>
 (function(){
   var widgetEl=document.querySelector('.calendly-inline-widget');
